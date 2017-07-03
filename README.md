@@ -5,7 +5,7 @@ Now we need to install the packages needed. Open terminal and write these comman
 2. pip install requests
 3. pip install bs4
     
-#Running
+# Running
 Open command line and write the following commands:
 1. mkdir my_news
 2.cd my_news
