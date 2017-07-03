@@ -30,8 +30,13 @@ def get_news():
 			ttl = a.find(class_='title')
 			articles[ttl.get_text()]=ttl.find('a').get('href')
 
+		i=1	
+
 		for a in articles :
 			target.write("".join([x if ord(x) < 128 else '' for x in a]))
 			target.write('\n')
 			target.write(str(articles[a]))
 			target.write("\n**************************************************************\n")	
+			if i==5 :
+				break
+			i+=1	
